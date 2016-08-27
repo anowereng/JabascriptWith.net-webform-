@@ -1,0 +1,32 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="JavascriptField.Index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Label ID="Label1" runat="server" Text="Message"></asp:Label>
+        <%--<asp:Button ID="Button1" runat="server" Text="Message" OnClick="Button1_Click" />--%>
+      <%-- <h1 id="message">Message</h1>--%>
+    </div>
+    </form>
+</body>
+</html>
+<script src="Scripts/jquery-3.1.0.js"></script>
+<script type="text/javascript">
+    //$("#Label1").show();
+    setTimeout(function () { $("#Label1").hide(5000); });
+</script>
+<%--<script type="text/javascript">
+    function HideLabel() {
+        var seconds = 5;
+        setTimeout(function () {
+            document.getElementById("Label1.statics");
+        }, seconds * 1000);
+    };
+</script>--%>
+
